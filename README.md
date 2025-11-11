@@ -12,4 +12,4 @@ Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly u
 
 - You might want to make the @match more specific to your stash install to keep it from matching on other sites.
 
-- If you want to add a site, let me know, or send me the code and I will add it.
+- If you want to add a site, let me know, or do a pull request.
