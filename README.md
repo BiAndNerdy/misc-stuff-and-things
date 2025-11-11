@@ -1,7 +1,4 @@
-# misc-stuff-and-things
-
-
-StashUniversalPerformerSearch.js
+#StashUniversalPerformerSearch.user.js
 
 Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly username detection) performer search for Stash. Handles SPA + hard-refresh fallback and a minimal settings panel.
 
