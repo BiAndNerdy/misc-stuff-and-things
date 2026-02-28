@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Stash Universal Performer Search
-// @version      1.0.14
+// @version      1.0.15
 // @description  Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly username detection) performer search for Stash.  Handles SPA + hard-refresh fallback and a minimal settings panel.
 // @license      MIT
 // @author       BiAndNerdy@gmail.com
@@ -252,7 +252,7 @@
     };
 
     /* ---------- SPA / Hard Refresh Fallback ---------- */
-    let lastPath = '';
+    let lastPath = location.pathname;
     let isInitializing = false;
 
     async function init() {
@@ -276,6 +276,12 @@
         }
 
         isInitializing = false;
+
+        // If the page is still a performer page but buttons weren't inserted
+        // (DOM may not have been fully ready during the GraphQL fetch), retry.
+        if (isPerf() && !document.querySelector('.sus-group')) {
+            setTimeout(waitForPerformerPage, 500);
+        }
     }
 
     function waitForPerformerPage() {
