@@ -2,8 +2,6 @@
 
 Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly username detection) performer search for Stash. Handles SPA + hard-refresh fallback and a minimal settings panel.
 
-- There are times where you must do a CTRL-F5 refresh to get the script to load. Not sure why.
-
 - This is not perfect but works reasonably well.
 
 - With Simpcity you have to hit Enter or click Search on the page to activate the search.
