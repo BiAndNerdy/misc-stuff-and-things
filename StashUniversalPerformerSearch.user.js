@@ -72,11 +72,11 @@
         },
 
         bunkr_archive: {
-            label: 'Bunkr Archive',
-            tooltip: 'Bunkr Archive: spaces become + (literal, not encoded).',
+            label: 'Bunkr Explorer',
+            tooltip: 'Bunkr Explorer: spaces become + (literal, not encoded).',
             buildUrls: (name) => {
                 const q = name.trim().replace(/\s+/g, '+');
-                return [`https://bunkrarchive.pythonanywhere.com/search?q=${q}`];
+                return [`https://bunkr-explorer.pages.dev/search?q=${q}`];
             },
         },
 
