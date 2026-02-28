@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Stash Universal Performer Search
-// @version      1.0.13
+// @version      1.0.14
 // @description  Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly username detection) performer search for Stash.  Handles SPA + hard-refresh fallback and a minimal settings panel.
 // @license      MIT
 // @author       BiAndNerdy@gmail.com
