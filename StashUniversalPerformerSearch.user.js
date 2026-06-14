@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Stash Universal Performer Search
-// @version      1.0.15
+// @version      1.0.16
 // @description  Empornium, Bunkr, SimpCity (prefill + focus), and Coomer (with OnlyFans/Fansly username detection) performer search for Stash.  Handles SPA + hard-refresh fallback and a minimal settings panel.
 // @license      MIT
 // @author       BiAndNerdy@gmail.com
@@ -82,10 +82,10 @@
 
         bunkr_albums: {
             label: 'Bunkr Albums',
-            tooltip: 'Bunkr-Albums.io: uses %20 for spaces.',
+            tooltip: 'balbums.st: spaces become +.',
             buildUrls: (name) => {
-                const q = name.trim().replace(/\s+/g, '%20');
-                return [`https://bunkr-albums.io/?search=${q}`];
+                const q = name.trim().replace(/\s+/g, '+');
+                return [`https://balbums.st/?search=${q}&mode=broad&per=20&sort=latest`];
             },
         },
 
